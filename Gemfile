@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'authlogic', '3.1.2'
 
 group :development, :test do
   gem 'sqlite3'
