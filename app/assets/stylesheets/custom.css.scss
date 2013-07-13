@@ -11,7 +11,7 @@ $highlight: #ccff66;
  * Defaults
  */
 body {
-	background-color: $background;
+	background-color: $sidebarBg;
 }
 
 .container-fluid {
@@ -64,5 +64,21 @@ body {
 			color: $highlight;
 			text-decoration: none;
 		}
+	}
+}
+
+.splash .logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	.kt88 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -35px;
+		margin-top: -82px;
 	}
 }
