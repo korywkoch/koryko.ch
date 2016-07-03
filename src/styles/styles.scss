@@ -1,0 +1,12 @@
+@import "misc/mixins";
+
+html, 
+body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.terminal {
+	@include gradient-radial(#337DFF, blue);	
+}

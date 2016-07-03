@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>koryko.ch</title>
+</head>
+<body class="terminal">
+	<app></app>
+	<script src="jspm_packages/system.js"></script>
+	<script src="config.js"></script>
+	<script>
+		System
+			.import('src/app/index')
+			.then(function() {
+				console.log('running');
+			})
+			.catch(function(err) {
+				console.log(err);
+				console.log(err.originalErr);
+			});
+	</script>
+</body>
+</html>
