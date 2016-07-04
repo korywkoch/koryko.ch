@@ -1,12 +1,15 @@
 @import "misc/mixins";
+@import "misc/variables";
 
 html, 
 body {
+	background-color: $bgdarker;
+	color: $textColor;
 	margin: 0px;
 	height: 100%;
 	width: 100%;
 }
 
 .terminal {
-	@include gradient-radial(#337DFF, blue);	
+	@include gradient-radial($bglighter, $bgdarker);	
 }

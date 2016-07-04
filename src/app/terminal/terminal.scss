@@ -1,0 +1,29 @@
+.container {
+	@include vertical-align();
+	padding-top: 20px;
+}
+
+input {
+	visibility: hidden;
+	width: 15px;
+}
+
+.caret {
+	border-right: 11px solid;
+  -webkit-animation: blinker 1s steps(2, start) infinite;
+	animation: blinker 1s steps(2, start) infinite;
+}
+
+@-moz-keyframes blinker {  
+	to { visibility: hidden; } 
+}
+
+@-webkit-keyframes blinker {  
+	to { visibility: hidden; }
+}
+
+@keyframes blinker {  
+	to {
+    visibility: hidden;
+  }
+}

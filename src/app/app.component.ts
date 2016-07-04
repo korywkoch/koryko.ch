@@ -1,10 +1,10 @@
 import { Component } from "@angular/core";
+import { TerminalComponent } from "./terminal/terminal.component";
 
 @Component({
+		directives: [TerminalComponent],
     selector: "app",
     styleUrls: ["./src/app/app.scss"],
-    template: ""
+    template: "<terminal></terminal>"
 })
-export class AppComponent {
-    welcome: string = "Hello from Angular2!";
-}
+export class AppComponent {}
