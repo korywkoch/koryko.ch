@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ViewChildren } from "@angular/core";
 
 @Component({
     selector: "terminal",
@@ -6,4 +6,19 @@ import { Component } from "@angular/core";
     templateUrl: "./src/app/terminal/terminal.html"
 })
 export class TerminalComponent {
+	@ViewChildren("input") input;
+
+	private command: string;
+
+	public constructor() {
+	}
+
+	ngAfterViewInit(): void {
+		this.input.first.nativeElement.focus();
+	}
+
+	focus(event: Event): void {
+		console.log('focus');
+		this.input.first.nativeElement.focus();
+	}
 }

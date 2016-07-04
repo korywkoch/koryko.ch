@@ -1,16 +1,32 @@
 .container {
-	@include vertical-align();
-	padding-top: 20px;
+	height: 100%;
+	width: 70%;
+	margin: 0px auto;
+	font-size: 3.25em;
+}
+
+.vertical-center {
+	// @include vertical-align();
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 input {
-	visibility: hidden;
-	width: 15px;
+	/* visibility: hidden; */
+	width: 0px;
+	border: 0px;
+	color: transparent;
+	padding: 0px;
+	margin: 0px;
+	background: transparent;
 }
 
 .caret {
 	border-right: 11px solid;
-  -webkit-animation: blinker 1s steps(2, start) infinite;
+	-webkit-animation: blinker 1s steps(2, start) infinite;
 	animation: blinker 1s steps(2, start) infinite;
 }
 
@@ -24,6 +40,6 @@ input {
 
 @keyframes blinker {  
 	to {
-    visibility: hidden;
-  }
+		visibility: hidden;
+	}
 }

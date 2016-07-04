@@ -1,4 +1,7 @@
-<div class="container">
-	<input type="text" />
-	<span class="caret">&nbsp;</span>
+<div class="container" (click)="focus($event)">
+	<div class="vertical-center">
+	<input #input type="text" [(ngModel)]="command" maxlength="128" />
+	<span class="command">{{command}}</span>
+	<span class="caret"></span>
+	</div>
 </div>
