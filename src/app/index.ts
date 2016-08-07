@@ -1,5 +1,3 @@
-import "src/styles/styles.scss!";
-
 import "reflect-metadata";
 import "zone.js/dist/zone";
 import { bootstrap } from "@angular/platform-browser-dynamic";

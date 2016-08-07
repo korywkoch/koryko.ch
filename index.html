@@ -6,12 +6,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono" rel="stylesheet">
 </head>
 <body class="terminal">
-	<app></app>
+	<kk-app></kk-app>
 	<script src="jspm_packages/system.js"></script>
-	<script src="config.js"></script>
+	<script src="jspm.config.js"></script>
+	<script src="dist/app.bundle.js"></script>
 	<script>
 		System
-			.import('src/app/index')
+			.import("src/styles/styles.scss!")
+			.then(function() {
+				System.import("src/app/index")
+			})
 			.then(function() {
 				console.log('running');
 			})

@@ -11,3 +11,4 @@
 node_modules*
 jspm_packages*
 .tern-*
+/dist

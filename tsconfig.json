@@ -1,11 +1,11 @@
 {
 	"compilerOptions": {
-		"target": "es6",
+		"target": "es5",
 		"module": "commonjs",
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"rootDir": ".",
-		"baseUrl": ".",
+		//"rootDir": ".",
+		//"baseUrl": ".",
 		"paths": {
 			"@angular/core": [
 				"jspm_packages/npm/@angular/core@2.0.0-rc.4"

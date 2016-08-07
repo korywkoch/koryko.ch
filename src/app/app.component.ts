@@ -3,8 +3,8 @@ import { TerminalComponent } from "./terminal/terminal.component";
 
 @Component({
 		directives: [TerminalComponent],
-    selector: "app",
+    selector: "kk-app",
     styleUrls: ["./src/app/app.scss"],
-    template: "<terminal></terminal>"
+    template: "<kk-terminal></kk-terminal>"
 })
 export class AppComponent {}
