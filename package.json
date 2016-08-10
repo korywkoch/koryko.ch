@@ -44,7 +44,7 @@
 		"build": "node node_modules/jspm/jspm bundle ./src/app/index.ts ./dist/app.bundle.js",
 		"start": "node node_modules/http-server/bin/http-server -p 7777",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "jspm install"
+    "postinstall": "node node_modules/jspm/jspm install"
   },
   "repository": {
     "type": "git",
