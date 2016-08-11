@@ -30,10 +30,15 @@ System.config({
 
   map: {
     "@angular/common": "npm:@angular/common@2.0.0-rc.4",
+    "@angular/common@2.0.0-rc.4": "npm:@angular/common@2.0.0-rc.4",
     "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.4",
+    "@angular/compiler@2.0.0-rc.4": "npm:@angular/compiler@2.0.0-rc.4",
     "@angular/core": "npm:@angular/core@2.0.0-rc.4",
+    "@angular/core@2.0.0-rc.4": "npm:@angular/core@2.0.0-rc.4",
     "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.4",
     "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.4",
+    "@angular/platform-browser-dynamic@2.0.0-rc.4": "npm:@angular/platform-browser-dynamic@2.0.0-rc.4",
+    "@angular/platform-browser@2.0.0-rc.4": "npm:@angular/platform-browser@2.0.0-rc.4",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",

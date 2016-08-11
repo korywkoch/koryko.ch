@@ -1,6 +1,6 @@
 <div class="container" (click)="focus($event)">
 	<div class="vertical-center">
-	<input #terminalInput="terminalInput" type="text" [(ngModel)]="command" (keyup.enter)="onSubmit()" maxlength="128" />
+	<input #terminalInput type="text" [(ngModel)]="command" (keyup.enter)="onSubmit()" maxlength="128" />
 	<span class="command">{{command}}</span>
 	<span class="caret"></span>
 	</div>

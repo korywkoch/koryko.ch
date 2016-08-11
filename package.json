@@ -12,9 +12,11 @@
     "rxjs": "^5.0.0-beta.6",
     "zone.js": "^0.6.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jspm": "^0.16.39"
+  },
   "jspm": {
-		"configFile": "jspm.config.js",
+    "configFile": "jspm.config.js",
     "dependencies": {
       "@angular/common@2.0.0-rc.4": "npm:@angular/common@2.0.0-rc.4",
       "@angular/compiler@2.0.0-rc.4": "npm:@angular/compiler@2.0.0-rc.4",
@@ -41,8 +43,8 @@
     }
   },
   "scripts": {
-		"build": "node node_modules/jspm/jspm bundle ./src/app/index.ts ./dist/app.bundle.js",
-		"start": "node node_modules/http-server/bin/http-server -p 7777",
+    "build": "node node_modules/jspm/jspm bundle ./src/app/index.ts ./dist/app.bundle.js",
+    "start": "node node_modules/http-server/bin/http-server -p 7777",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node node_modules/jspm/jspm install"
   },
