@@ -26,7 +26,7 @@
       "@angular/platform-browser@2.0.0-rc.4": "npm:@angular/platform-browser@2.0.0-rc.4",
       "reflect-metadata": "npm:reflect-metadata@^0.1.3",
       "rxjs": "npm:rxjs@5.0.0-beta.6",
-      "scss": "github:mobilexag/plugin-sass@^0.4.6",
+      "scss": "github:dougludlow/plugin-sass@^0.4.6",
       "ts": "github:frankwallis/plugin-typescript@^4.0.16",
       "zone.js": "npm:zone.js@0.6.12"
     },
