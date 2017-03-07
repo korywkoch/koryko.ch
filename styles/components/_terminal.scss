@@ -30,16 +30,14 @@ input {
 	animation: blinker 1s steps(2, start) infinite;
 }
 
-@-moz-keyframes blinker {  
-	to { visibility: hidden; } 
-}
-
-@-webkit-keyframes blinker {  
+@-moz-keyframes blinker {
 	to { visibility: hidden; }
 }
 
-@keyframes blinker {  
-	to {
-		visibility: hidden;
-	}
+@-webkit-keyframes blinker {
+	to { visibility: hidden; }
+}
+
+@keyframes blinker {
+	to { visibility: hidden; }
 }

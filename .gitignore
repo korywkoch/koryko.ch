@@ -9,6 +9,6 @@
 /tmp
 
 node_modules*
-jspm_packages*
 .tern-*
+.vscode
 /dist

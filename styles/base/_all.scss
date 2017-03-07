@@ -1,7 +1,6 @@
-@import "misc/mixins";
-@import "misc/variables";
+@import '../utils/all';
 
-html, 
+html,
 body {
 	background-color: $bgdarker;
 	color: $textColor;
@@ -11,7 +10,12 @@ body {
 	font-size: 14px;
 }
 
+body > #root {
+	height: 100%;
+	width: 100%;
+}
+
 .terminal {
-	@include gradient-radial($bglighter, $bgdarker);	
+	@include gradient-radial($bglighter, $bgdarker);
 	font-family: $monospace;
 }
