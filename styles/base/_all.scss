@@ -2,7 +2,6 @@
 
 html,
 body {
-	background-color: $bgdarker;
 	color: $textColor;
 	margin: 0px;
 	height: 100%;
@@ -10,12 +9,17 @@ body {
 	font-size: 14px;
 }
 
-body > #root {
-	height: 100%;
-	width: 100%;
+body {
+  background: black url('/img/analog-feedback.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.terminal {
-	@include gradient-radial($bglighter, $bgdarker);
+body > #root {
+	@include gradient-radial(rgba(0,0,0,0.5), rgba(0,0,0,0.9));
 	font-family: $monospace;
+	height: 100%;
+	width: 100%;
 }

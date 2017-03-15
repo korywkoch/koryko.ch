@@ -4,11 +4,10 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-
+**/*.log
+tmp
 node_modules*
 .tern-*
 .vscode
-/dist
+dist
+**/forever.json
