@@ -9,12 +9,17 @@ export default class Terminal extends React.Component {
     this.current = this.state.history[this.state.history.length - 1];
     this.onChange = this.onChange.bind(this);
     this.onKeyUp = this.onKeyUp.bind(this);
+    this.focusInput = this.focusInput.bind(this);
     this.commandService = new CommandService();
   }
 
   // Lifecycles
   // componentDidMount()
   // componentWillUnmount()
+
+  focusInput(e) {
+    this.cmdInput.focus();
+  }
 
   onChange(e) {
     let prev = this.current;
@@ -49,13 +54,14 @@ export default class Terminal extends React.Component {
   render() {
     const commandOutputList = this.getOutputList();
     return (
-      <div className="container">
+      <div className="container" onClick={this.focusInput}>
         <div className="vertical-center">
           <div className="terminal--output">
             { commandOutputList }
           </div>
           <div className="terminal--input">
             <input type="text" autoFocus
+              ref={(input) => { this.cmdInput = input; }}
               value={this.current.command}
               onChange={this.onChange}
               onKeyUp={this.onKeyUp} />
