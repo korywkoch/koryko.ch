@@ -1,3 +1,1 @@
-# Code for koryko.ch
-
-This is a rails application created to maintain [* http://koryko.ch *](http://koryko.ch).
+Codebase for [http://koryko.ch](http://koryko.ch).
